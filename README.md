@@ -32,8 +32,8 @@ The objective of this project is to model NBA game win probabilities using pre-g
 - **Fatigue vs. Efficiency:** Visualized the distribution of rest days across scoring metrics using semi-transparent scatter plots (`alpha=0.7`).
 
 
-![Off Def Pace Heatmap](off_def_pace_heatmap.png)
-![Off Rating Rest Days Scatterplot](off_rating_rest_days_scatterplot.png)
+![Off Def Pace Heatmap](images/heatmap.png) 
+![Off Rating Rest Days Scatterplot](images/scatter.png)
 
 ---
 
@@ -44,7 +44,7 @@ The objective of this project is to model NBA game win probabilities using pre-g
 - **Feature Scaling:** `StandardScaler` applied to normalize varying units (ratings vs. rest days) for interpretable coefficient weights.
 
 ### Results
-- **Test Accuracy:** **54.67%** on unseen future matchups (providing a statistically sound edge over baseline binary probability without lookahead data leakage).
+- **Test Accuracy:** **54.47%** on unseen future matchups (providing a statistically sound edge over baseline binary probability without lookahead data leakage).
 - **Key Feature Insights:**
   - `prev_OFF_RATING` (+0.138) and `prev_DEF_RATING` (-0.132) carry the strongest predictive weight, confirming efficiency as the primary driver of win probability.
   - `REST_DAYS` (+0.068) provides a measurable, statistically significant edge for rested teams.
