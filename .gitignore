@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+playoff_predictor_model/.idea/
+*.iml
+__pycache__/
+
+pandas_practice/
+leetcode.py
+Rock_Paper_Scissors.py
+Word_Freq_Counter.py
+"Smart"_Contact_Book.py
+.DS_Store
